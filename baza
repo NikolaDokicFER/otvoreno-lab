@@ -1,0 +1,144 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 14.2
+-- Dumped by pg_dump version 14.2
+
+-- Started on 2022-11-01 17:02:13
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3 (class 2615 OID 2200)
+-- Name: public; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA public;
+
+
+ALTER SCHEMA public OWNER TO postgres;
+
+--
+-- TOC entry 3315 (class 0 OID 0)
+-- Dependencies: 3
+-- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: postgres
+--
+
+COMMENT ON SCHEMA public IS 'standard public schema';
+
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 209 (class 1259 OID 17420)
+-- Name: players; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.players (
+    firstname character varying(255),
+    lastname character varying(255),
+    dob date,
+    weight integer,
+    height integer,
+    atprank integer NOT NULL,
+    racket character varying(255),
+    coach character varying(255),
+    stronghand character varying(255),
+    country character varying(255)
+);
+
+
+ALTER TABLE public.players OWNER TO postgres;
+
+--
+-- TOC entry 210 (class 1259 OID 17451)
+-- Name: tournament; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.tournament (
+    atprank integer,
+    city character varying(255),
+    tier character varying(255),
+    result character varying(255)
+);
+
+
+ALTER TABLE public.tournament OWNER TO postgres;
+
+--
+-- TOC entry 3308 (class 0 OID 17420)
+-- Dependencies: 209
+-- Data for Name: players; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.players (firstname, lastname, dob, weight, height, atprank, racket, coach, stronghand, country) FROM stdin;
+Carlos	Alcaraz	2003-05-05	74	183	1	Babolat	Juan Carlos Ferrero	Right	Spain
+Rafael	Nadal	1986-06-03	85	185	2	Babolat	Carlos Moya	Left	Spain
+Daniil	Medvedev	1996-02-11	83	198	3	Tecnifibre	Gilles Cervara	Right	Russia
+Casper	Ruud	1998-12-22	77	183	4	Yonex	Christian Ruud	Right	Norway
+Stefanos	Tsitsipas	1998-08-12	90	193	5	Wilson	Apostolos Tsitsipas	Right	Greece
+Alexandar	Zverev	1997-04-20	90	198	6	Head	Sergi Bruguera	Right	Germany
+Novak	Djokovic	1987-05-22	77	188	7	Head	Goran Ivanisevic	Right	Serbia
+Felix	Auger-Aliassime	2000-08-08	88	193	8	Babolat	Frederic Fontang	Right	Canada
+Andrey	Rublev	1997-10-20	75	188	9	Head	Fernando Vicente	Right	Russia
+Hubert	Hurkacz	1997-02-11	81	196	10	Yonex	Craig Boynton	Right	Poland
+\.
+
+
+--
+-- TOC entry 3309 (class 0 OID 17451)
+-- Dependencies: 210
+-- Data for Name: tournament; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.tournament (atprank, city, tier, result) FROM stdin;
+1	Basel	500	SF
+1	Astana	500	R32
+2	New York	GS	R16
+2	Cincinnati	1000	R32
+3	Vienna	500	Win
+3	Astana	500	SF
+4	Basel	500	R32
+4	Tokyo	500	R32
+5	Vienna	500	R16
+5	Stockholm	250	F
+6	Paris	GS	SF
+6	Rome	1000	SF
+7	Astana	500	Win
+7	Tel Aviv	250	Win
+8	Basel	500	Win
+8	Antwerp	250	Win
+9	Vienna	500	R16
+9	Gijon	250	Win
+10	Vienna	500	QF
+10	Antwerp	250	QF
+\.
+
+
+--
+-- TOC entry 3168 (class 2606 OID 17443)
+-- Name: players players_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.players
+    ADD CONSTRAINT players_pkey PRIMARY KEY (atprank);
+
+
+-- Completed on 2022-11-01 17:02:13
+
+--
+-- PostgreSQL database dump complete
+--
+
