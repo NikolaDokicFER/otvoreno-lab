@@ -9,6 +9,7 @@
 	"coach": "Juan Carlos Ferrero",
 	"stronghand": "Right",
 	"country": "Spain",
+	"playerid": 1,
 	"tournament": [{
 		"city": "Basel",
 		"tier": "500",
@@ -29,6 +30,7 @@
 	"coach": "Carlos Moya",
 	"stronghand": "Left",
 	"country": "Spain",
+	"playerid": 2,
 	"tournament": [{
 		"city": "New York",
 		"tier": "GS",
@@ -49,6 +51,7 @@
 	"coach": "Gilles Cervara",
 	"stronghand": "Right",
 	"country": "Russia",
+	"playerid": 3,
 	"tournament": [{
 		"city": "Vienna",
 		"tier": "500",
@@ -69,6 +72,7 @@
 	"coach": "Christian Ruud",
 	"stronghand": "Right",
 	"country": "Norway",
+	"playerid": 4,
 	"tournament": [{
 		"city": "Basel",
 		"tier": "500",
@@ -89,6 +93,7 @@
 	"coach": "Apostolos Tsitsipas",
 	"stronghand": "Right",
 	"country": "Greece",
+	"playerid": 5,
 	"tournament": [{
 		"city": "Vienna",
 		"tier": "500",
@@ -109,6 +114,7 @@
 	"coach": "Sergi Bruguera",
 	"stronghand": "Right",
 	"country": "Germany",
+	"playerid": 6,
 	"tournament": [{
 		"city": "Paris",
 		"tier": "GS",
@@ -129,6 +135,7 @@
 	"coach": "Goran Ivanisevic",
 	"stronghand": "Right",
 	"country": "Serbia",
+	"playerid": 7,
 	"tournament": [{
 		"city": "Astana",
 		"tier": "500",
@@ -149,6 +156,7 @@
 	"coach": "Frederic Fontang",
 	"stronghand": "Right",
 	"country": "Canada",
+	"playerid": 8,
 	"tournament": [{
 		"city": "Basel",
 		"tier": "500",
@@ -169,6 +177,7 @@
 	"coach": "Fernando Vicente",
 	"stronghand": "Right",
 	"country": "Russia",
+	"playerid": 9,
 	"tournament": [{
 		"city": "Vienna",
 		"tier": "500",
@@ -189,6 +198,7 @@
 	"coach": "Craig Boynton",
 	"stronghand": "Right",
 	"country": "Poland",
+	"playerid": 10,
 	"tournament": [{
 		"city": "Vienna",
 		"tier": "500",

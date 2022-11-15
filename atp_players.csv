@@ -1,21 +1,21 @@
-atprank,firstname,lastname,dob,weight,height,racket,coach,stronghand,country,city,tier,result
-1,Carlos,Alcaraz,2003-05-05,74,183,Babolat,Juan Carlos Ferrero,Right,Spain,Basel,500,SF
-1,Carlos,Alcaraz,2003-05-05,74,183,Babolat,Juan Carlos Ferrero,Right,Spain,Astana,500,R32
-2,Rafael,Nadal,1986-06-03,85,185,Babolat,Carlos Moya,Left,Spain,New York,GS,R16
-2,Rafael,Nadal,1986-06-03,85,185,Babolat,Carlos Moya,Left,Spain,Cincinnati,1000,R32
-3,Daniil,Medvedev,1996-02-11,83,198,Tecnifibre,Gilles Cervara,Right,Russia,Vienna,500,Win
-3,Daniil,Medvedev,1996-02-11,83,198,Tecnifibre,Gilles Cervara,Right,Russia,Astana,500,SF
-4,Casper,Ruud,1998-12-22,77,183,Yonex,Christian Ruud,Right,Norway,Basel,500,R32
-4,Casper,Ruud,1998-12-22,77,183,Yonex,Christian Ruud,Right,Norway,Tokyo,500,R32
-5,Stefanos,Tsitsipas,1998-08-12,90,193,Wilson,Apostolos Tsitsipas,Right,Greece,Vienna,500,R16
-5,Stefanos,Tsitsipas,1998-08-12,90,193,Wilson,Apostolos Tsitsipas,Right,Greece,Stockholm,250,F
-6,Alexandar,Zverev,1997-04-20,90,198,Head,Sergi Bruguera,Right,Germany,Paris,GS,SF
-6,Alexandar,Zverev,1997-04-20,90,198,Head,Sergi Bruguera,Right,Germany,Rome,1000,SF
-7,Novak,Djokovic,1987-05-22,77,188,Head,Goran Ivanisevic,Right,Serbia,Astana,500,Win
-7,Novak,Djokovic,1987-05-22,77,188,Head,Goran Ivanisevic,Right,Serbia,Tel Aviv,250,Win
-8,Felix,Auger-Aliassime,2000-08-08,88,193,Babolat,Frederic Fontang,Right,Canada,Basel,500,Win
-8,Felix,Auger-Aliassime,2000-08-08,88,193,Babolat,Frederic Fontang,Right,Canada,Antwerp,250,Win
-9,Andrey,Rublev,1997-10-20,75,188,Head,Fernando Vicente,Right,Russia,Vienna,500,R16
-9,Andrey,Rublev,1997-10-20,75,188,Head,Fernando Vicente,Right,Russia,Gijon,250,Win
-10,Hubert,Hurkacz,1997-02-11,81,196,Yonex,Craig Boynton,Right,Poland,Vienna,500,QF
-10,Hubert,Hurkacz,1997-02-11,81,196,Yonex,Craig Boynton,Right,Poland,Antwerp,250,QF
+playerid,firstname,lastname,dob,weight,height,atprank,racket,coach,stronghand,country,city,tier,result
+1,Carlos,Alcaraz,2003-05-05,74,183,1,Babolat,Juan Carlos Ferrero,Right,Spain,Basel,500,SF
+1,Carlos,Alcaraz,2003-05-05,74,183,1,Babolat,Juan Carlos Ferrero,Right,Spain,Astana,500,R32
+2,Rafael,Nadal,1986-06-03,85,185,2,Babolat,Carlos Moya,Left,Spain,New York,GS,R16
+2,Rafael,Nadal,1986-06-03,85,185,2,Babolat,Carlos Moya,Left,Spain,Cincinnati,1000,R32
+3,Daniil,Medvedev,1996-02-11,83,198,3,Tecnifibre,Gilles Cervara,Right,Russia,Vienna,500,Win
+3,Daniil,Medvedev,1996-02-11,83,198,3,Tecnifibre,Gilles Cervara,Right,Russia,Astana,500,SF
+4,Casper,Ruud,1998-12-22,77,183,4,Yonex,Christian Ruud,Right,Norway,Basel,500,R32
+4,Casper,Ruud,1998-12-22,77,183,4,Yonex,Christian Ruud,Right,Norway,Tokyo,500,R32
+5,Stefanos,Tsitsipas,1998-08-12,90,193,5,Wilson,Apostolos Tsitsipas,Right,Greece,Vienna,500,R16
+5,Stefanos,Tsitsipas,1998-08-12,90,193,5,Wilson,Apostolos Tsitsipas,Right,Greece,Stockholm,250,F
+6,Alexandar,Zverev,1997-04-20,90,198,6,Head,Sergi Bruguera,Right,Germany,Paris,GS,SF
+6,Alexandar,Zverev,1997-04-20,90,198,6,Head,Sergi Bruguera,Right,Germany,Rome,1000,SF
+7,Novak,Djokovic,1987-05-22,77,188,7,Head,Goran Ivanisevic,Right,Serbia,Astana,500,Win
+7,Novak,Djokovic,1987-05-22,77,188,7,Head,Goran Ivanisevic,Right,Serbia,Tel Aviv,250,Win
+8,Felix,Auger-Aliassime,2000-08-08,88,193,8,Babolat,Frederic Fontang,Right,Canada,Basel,500,Win
+8,Felix,Auger-Aliassime,2000-08-08,88,193,8,Babolat,Frederic Fontang,Right,Canada,Antwerp,250,Win
+9,Andrey,Rublev,1997-10-20,75,188,9,Head,Fernando Vicente,Right,Russia,Vienna,500,R16
+9,Andrey,Rublev,1997-10-20,75,188,9,Head,Fernando Vicente,Right,Russia,Gijon,250,Win
+10,Hubert,Hurkacz,1997-02-11,81,196,10,Yonex,Craig Boynton,Right,Poland,Vienna,500,QF
+10,Hubert,Hurkacz,1997-02-11,81,196,10,Yonex,Craig Boynton,Right,Poland,Antwerp,250,QF

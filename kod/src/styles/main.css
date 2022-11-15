@@ -1,0 +1,25 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.center{
+    margin: auto;
+}
+
+.form-center{
+    margin: auto;
+    text-align: center;
+}

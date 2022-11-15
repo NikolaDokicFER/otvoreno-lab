@@ -1,0 +1,901 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/NikolaDokicFER/otvoreno-lab/blob/main/atp_players.json",
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+            "firstname",
+            "lastname",
+            "dob",
+            "weight",
+            "height",
+            "atprank",
+            "racket",
+            "coach",
+            "stronghand",
+            "country",
+            "playerid",
+            "tournament"
+        ],
+        "properties": {
+            "firstname": {
+                "type": "string",
+                "title": "The firstname Schema",
+                "examples": [
+                    "Carlos",
+                    "Rafael",
+                    "Daniil",
+                    "Casper",
+                    "Stefanos",
+                    "Alexandar",
+                    "Novak",
+                    "Felix",
+                    "Andrey",
+                    "Hubert"
+                ]
+            },
+            "lastname": {
+                "type": "string",
+                "title": "The lastname Schema",
+                "examples": [
+                    "Alcaraz",
+                    "Nadal",
+                    "Medvedev",
+                    "Ruud",
+                    "Tsitsipas",
+                    "Zverev",
+                    "Djokovic",
+                    "Auger-Aliassime",
+                    "Rublev",
+                    "Hurkacz"
+                ]
+            },
+            "dob": {
+                "type": "string",
+                "title": "The dob Schema",
+                "examples": [
+                    "2003-05-05",
+                    "1986-06-03",
+                    "1996-02-11",
+                    "1998-12-22",
+                    "1998-08-12",
+                    "1997-04-20",
+                    "1987-05-22",
+                    "2000-08-08",
+                    "1997-10-20",
+                    "1997-02-11"
+                ]
+            },
+            "weight": {
+                "type": "integer",
+                "title": "The weight Schema",
+                "examples": [
+                    74,
+                    85,
+                    83,
+                    77,
+                    90,
+                    88,
+                    75,
+                    81
+                ]
+            },
+            "height": {
+                "type": "integer",
+                "title": "The height Schema",
+                "examples": [
+                    183,
+                    185,
+                    198,
+                    193,
+                    188,
+                    196
+                ]
+            },
+            "atprank": {
+                "type": "integer",
+                "title": "The atprank Schema",
+                "examples": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            },
+            "racket": {
+                "type": "string",
+                "title": "The racket Schema",
+                "examples": [
+                    "Babolat",
+                    "Tecnifibre",
+                    "Yonex",
+                    "Wilson",
+                    "Head"
+                ]
+            },
+            "coach": {
+                "type": "string",
+                "title": "The coach Schema",
+                "examples": [
+                    "Juan Carlos Ferrero",
+                    "Carlos Moya",
+                    "Gilles Cervara",
+                    "Christian Ruud",
+                    "Apostolos Tsitsipas",
+                    "Sergi Bruguera",
+                    "Goran Ivanisevic",
+                    "Frederic Fontang",
+                    "Fernando Vicente",
+                    "Craig Boynton"
+                ]
+            },
+            "stronghand": {
+                "type": "string",
+                "title": "The stronghand Schema",
+                "examples": [
+                    "Right",
+                    "Left"
+                ]
+            },
+            "country": {
+                "type": "string",
+                "title": "The country Schema",
+                "examples": [
+                    "Spain",
+                    "Russia",
+                    "Norway",
+                    "Greece",
+                    "Germany",
+                    "Serbia",
+                    "Canada",
+                    "Poland"
+                ]
+            },
+            "playerid": {
+                "type": "integer",
+                "title": "The playerid Schema",
+                "examples": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            },
+            "tournament": {
+                "type": "array",
+                "title": "The tournament Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "city",
+                        "tier",
+                        "result"
+                    ],
+                    "properties": {
+                        "city": {
+                            "type": "string",
+                            "title": "The city Schema",
+                            "examples": [
+                                "Basel",
+                                "Astana",
+                                "New York",
+                                "Cincinnati",
+                                "Vienna",
+                                "Tokyo",
+                                "Stockholm",
+                                "Paris",
+                                "Rome",
+                                "Tel Aviv",
+                                "Antwerp",
+                                "Gijon"
+                            ]
+                        },
+                        "tier": {
+                            "type": "string",
+                            "title": "The tier Schema",
+                            "examples": [
+                                "500",
+                                "GS",
+                                "1000",
+                                "250"
+                            ]
+                        },
+                        "result": {
+                            "type": "string",
+                            "title": "The result Schema",
+                            "examples": [
+                                "SF",
+                                "R32",
+                                "R16",
+                                "Win",
+                                "F",
+                                "QF"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "city": "Basel",
+                        "tier": "500",
+                        "result": "SF"
+                    },
+                    {
+                        "city": "Astana",
+                        "tier": "500",
+                        "result": "R32"
+                    },
+                    {
+                        "city": "New York",
+                        "tier": "GS",
+                        "result": "R16"
+                    },
+                    {
+                        "city": "Cincinnati",
+                        "tier": "1000",
+                        "result": "R32"
+                    },
+                    {
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Astana",
+                        "tier": "500",
+                        "result": "SF"
+                    },
+                    {
+                        "city": "Basel",
+                        "tier": "500",
+                        "result": "R32"
+                    },
+                    {
+                        "city": "Tokyo",
+                        "tier": "500",
+                        "result": "R32"
+                    },
+                    {
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "R16"
+                    },
+                    {
+                        "city": "Stockholm",
+                        "tier": "250",
+                        "result": "F"
+                    },
+                    {
+                        "city": "Paris",
+                        "tier": "GS",
+                        "result": "SF"
+                    },
+                    {
+                        "city": "Rome",
+                        "tier": "1000",
+                        "result": "SF"
+                    },
+                    {
+                        "city": "Astana",
+                        "tier": "500",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Tel Aviv",
+                        "tier": "250",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Basel",
+                        "tier": "500",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Antwerp",
+                        "tier": "250",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "R16"
+                    },
+                    {
+                        "city": "Gijon",
+                        "tier": "250",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "QF"
+                    },
+                    {
+                        "city": "Antwerp",
+                        "tier": "250",
+                        "result": "QF"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "city": "Basel",
+                        "tier": "500",
+                        "result": "SF"
+                    },
+                    {
+                        "city": "Astana",
+                        "tier": "500",
+                        "result": "R32"
+                    }],
+                    [{
+                        "city": "New York",
+                        "tier": "GS",
+                        "result": "R16"
+                    },
+                    {
+                        "city": "Cincinnati",
+                        "tier": "1000",
+                        "result": "R32"
+                    }],
+                    [{
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Astana",
+                        "tier": "500",
+                        "result": "SF"
+                    }],
+                    [{
+                        "city": "Basel",
+                        "tier": "500",
+                        "result": "R32"
+                    },
+                    {
+                        "city": "Tokyo",
+                        "tier": "500",
+                        "result": "R32"
+                    }],
+                    [{
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "R16"
+                    },
+                    {
+                        "city": "Stockholm",
+                        "tier": "250",
+                        "result": "F"
+                    }],
+                    [{
+                        "city": "Paris",
+                        "tier": "GS",
+                        "result": "SF"
+                    },
+                    {
+                        "city": "Rome",
+                        "tier": "1000",
+                        "result": "SF"
+                    }],
+                    [{
+                        "city": "Astana",
+                        "tier": "500",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Tel Aviv",
+                        "tier": "250",
+                        "result": "Win"
+                    }],
+                    [{
+                        "city": "Basel",
+                        "tier": "500",
+                        "result": "Win"
+                    },
+                    {
+                        "city": "Antwerp",
+                        "tier": "250",
+                        "result": "Win"
+                    }],
+                    [{
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "R16"
+                    },
+                    {
+                        "city": "Gijon",
+                        "tier": "250",
+                        "result": "Win"
+                    }],
+                    [{
+                        "city": "Vienna",
+                        "tier": "500",
+                        "result": "QF"
+                    },
+                    {
+                        "city": "Antwerp",
+                        "tier": "250",
+                        "result": "QF"
+                    }]
+                ]
+            }
+        },
+        "examples": [{
+            "firstname": "Carlos",
+            "lastname": "Alcaraz",
+            "dob": "2003-05-05",
+            "weight": 74,
+            "height": 183,
+            "atprank": 1,
+            "racket": "Babolat",
+            "coach": "Juan Carlos Ferrero",
+            "stronghand": "Right",
+            "country": "Spain",
+            "playerid": 1,
+            "tournament": [{
+                "city": "Basel",
+                "tier": "500",
+                "result": "SF"
+            },
+            {
+                "city": "Astana",
+                "tier": "500",
+                "result": "R32"
+            }]
+        },
+        {
+            "firstname": "Rafael",
+            "lastname": "Nadal",
+            "dob": "1986-06-03",
+            "weight": 85,
+            "height": 185,
+            "atprank": 2,
+            "racket": "Babolat",
+            "coach": "Carlos Moya",
+            "stronghand": "Left",
+            "country": "Spain",
+            "playerid": 2,
+            "tournament": [{
+                "city": "New York",
+                "tier": "GS",
+                "result": "R16"
+            },
+            {
+                "city": "Cincinnati",
+                "tier": "1000",
+                "result": "R32"
+            }]
+        },
+        {
+            "firstname": "Daniil",
+            "lastname": "Medvedev",
+            "dob": "1996-02-11",
+            "weight": 83,
+            "height": 198,
+            "atprank": 3,
+            "racket": "Tecnifibre",
+            "coach": "Gilles Cervara",
+            "stronghand": "Right",
+            "country": "Russia",
+            "playerid": 3,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "Win"
+            },
+            {
+                "city": "Astana",
+                "tier": "500",
+                "result": "SF"
+            }]
+        },
+        {
+            "firstname": "Casper",
+            "lastname": "Ruud",
+            "dob": "1998-12-22",
+            "weight": 77,
+            "height": 183,
+            "atprank": 4,
+            "racket": "Yonex",
+            "coach": "Christian Ruud",
+            "stronghand": "Right",
+            "country": "Norway",
+            "playerid": 4,
+            "tournament": [{
+                "city": "Basel",
+                "tier": "500",
+                "result": "R32"
+            },
+            {
+                "city": "Tokyo",
+                "tier": "500",
+                "result": "R32"
+            }]
+        },
+        {
+            "firstname": "Stefanos",
+            "lastname": "Tsitsipas",
+            "dob": "1998-08-12",
+            "weight": 90,
+            "height": 193,
+            "atprank": 5,
+            "racket": "Wilson",
+            "coach": "Apostolos Tsitsipas",
+            "stronghand": "Right",
+            "country": "Greece",
+            "playerid": 5,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "R16"
+            },
+            {
+                "city": "Stockholm",
+                "tier": "250",
+                "result": "F"
+            }]
+        },
+        {
+            "firstname": "Alexandar",
+            "lastname": "Zverev",
+            "dob": "1997-04-20",
+            "weight": 90,
+            "height": 198,
+            "atprank": 6,
+            "racket": "Head",
+            "coach": "Sergi Bruguera",
+            "stronghand": "Right",
+            "country": "Germany",
+            "playerid": 6,
+            "tournament": [{
+                "city": "Paris",
+                "tier": "GS",
+                "result": "SF"
+            },
+            {
+                "city": "Rome",
+                "tier": "1000",
+                "result": "SF"
+            }]
+        },
+        {
+            "firstname": "Novak",
+            "lastname": "Djokovic",
+            "dob": "1987-05-22",
+            "weight": 77,
+            "height": 188,
+            "atprank": 7,
+            "racket": "Head",
+            "coach": "Goran Ivanisevic",
+            "stronghand": "Right",
+            "country": "Serbia",
+            "playerid": 7,
+            "tournament": [{
+                "city": "Astana",
+                "tier": "500",
+                "result": "Win"
+            },
+            {
+                "city": "Tel Aviv",
+                "tier": "250",
+                "result": "Win"
+            }]
+        },
+        {
+            "firstname": "Felix",
+            "lastname": "Auger-Aliassime",
+            "dob": "2000-08-08",
+            "weight": 88,
+            "height": 193,
+            "atprank": 8,
+            "racket": "Babolat",
+            "coach": "Frederic Fontang",
+            "stronghand": "Right",
+            "country": "Canada",
+            "playerid": 8,
+            "tournament": [{
+                "city": "Basel",
+                "tier": "500",
+                "result": "Win"
+            },
+            {
+                "city": "Antwerp",
+                "tier": "250",
+                "result": "Win"
+            }]
+        },
+        {
+            "firstname": "Andrey",
+            "lastname": "Rublev",
+            "dob": "1997-10-20",
+            "weight": 75,
+            "height": 188,
+            "atprank": 9,
+            "racket": "Head",
+            "coach": "Fernando Vicente",
+            "stronghand": "Right",
+            "country": "Russia",
+            "playerid": 9,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "R16"
+            },
+            {
+                "city": "Gijon",
+                "tier": "250",
+                "result": "Win"
+            }]
+        },
+        {
+            "firstname": "Hubert",
+            "lastname": "Hurkacz",
+            "dob": "1997-02-11",
+            "weight": 81,
+            "height": 196,
+            "atprank": 10,
+            "racket": "Yonex",
+            "coach": "Craig Boynton",
+            "stronghand": "Right",
+            "country": "Poland",
+            "playerid": 10,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "QF"
+            },
+            {
+                "city": "Antwerp",
+                "tier": "250",
+                "result": "QF"
+            }]
+        }]
+    },
+    "examples": [
+        [{
+            "firstname": "Carlos",
+            "lastname": "Alcaraz",
+            "dob": "2003-05-05",
+            "weight": 74,
+            "height": 183,
+            "atprank": 1,
+            "racket": "Babolat",
+            "coach": "Juan Carlos Ferrero",
+            "stronghand": "Right",
+            "country": "Spain",
+            "playerid": 1,
+            "tournament": [{
+                "city": "Basel",
+                "tier": "500",
+                "result": "SF"
+            },
+            {
+                "city": "Astana",
+                "tier": "500",
+                "result": "R32"
+            }]
+        },
+        {
+            "firstname": "Rafael",
+            "lastname": "Nadal",
+            "dob": "1986-06-03",
+            "weight": 85,
+            "height": 185,
+            "atprank": 2,
+            "racket": "Babolat",
+            "coach": "Carlos Moya",
+            "stronghand": "Left",
+            "country": "Spain",
+            "playerid": 2,
+            "tournament": [{
+                "city": "New York",
+                "tier": "GS",
+                "result": "R16"
+            },
+            {
+                "city": "Cincinnati",
+                "tier": "1000",
+                "result": "R32"
+            }]
+        },
+        {
+            "firstname": "Daniil",
+            "lastname": "Medvedev",
+            "dob": "1996-02-11",
+            "weight": 83,
+            "height": 198,
+            "atprank": 3,
+            "racket": "Tecnifibre",
+            "coach": "Gilles Cervara",
+            "stronghand": "Right",
+            "country": "Russia",
+            "playerid": 3,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "Win"
+            },
+            {
+                "city": "Astana",
+                "tier": "500",
+                "result": "SF"
+            }]
+        },
+        {
+            "firstname": "Casper",
+            "lastname": "Ruud",
+            "dob": "1998-12-22",
+            "weight": 77,
+            "height": 183,
+            "atprank": 4,
+            "racket": "Yonex",
+            "coach": "Christian Ruud",
+            "stronghand": "Right",
+            "country": "Norway",
+            "playerid": 4,
+            "tournament": [{
+                "city": "Basel",
+                "tier": "500",
+                "result": "R32"
+            },
+            {
+                "city": "Tokyo",
+                "tier": "500",
+                "result": "R32"
+            }]
+        },
+        {
+            "firstname": "Stefanos",
+            "lastname": "Tsitsipas",
+            "dob": "1998-08-12",
+            "weight": 90,
+            "height": 193,
+            "atprank": 5,
+            "racket": "Wilson",
+            "coach": "Apostolos Tsitsipas",
+            "stronghand": "Right",
+            "country": "Greece",
+            "playerid": 5,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "R16"
+            },
+            {
+                "city": "Stockholm",
+                "tier": "250",
+                "result": "F"
+            }]
+        },
+        {
+            "firstname": "Alexandar",
+            "lastname": "Zverev",
+            "dob": "1997-04-20",
+            "weight": 90,
+            "height": 198,
+            "atprank": 6,
+            "racket": "Head",
+            "coach": "Sergi Bruguera",
+            "stronghand": "Right",
+            "country": "Germany",
+            "playerid": 6,
+            "tournament": [{
+                "city": "Paris",
+                "tier": "GS",
+                "result": "SF"
+            },
+            {
+                "city": "Rome",
+                "tier": "1000",
+                "result": "SF"
+            }]
+        },
+        {
+            "firstname": "Novak",
+            "lastname": "Djokovic",
+            "dob": "1987-05-22",
+            "weight": 77,
+            "height": 188,
+            "atprank": 7,
+            "racket": "Head",
+            "coach": "Goran Ivanisevic",
+            "stronghand": "Right",
+            "country": "Serbia",
+            "playerid": 7,
+            "tournament": [{
+                "city": "Astana",
+                "tier": "500",
+                "result": "Win"
+            },
+            {
+                "city": "Tel Aviv",
+                "tier": "250",
+                "result": "Win"
+            }]
+        },
+        {
+            "firstname": "Felix",
+            "lastname": "Auger-Aliassime",
+            "dob": "2000-08-08",
+            "weight": 88,
+            "height": 193,
+            "atprank": 8,
+            "racket": "Babolat",
+            "coach": "Frederic Fontang",
+            "stronghand": "Right",
+            "country": "Canada",
+            "playerid": 8,
+            "tournament": [{
+                "city": "Basel",
+                "tier": "500",
+                "result": "Win"
+            },
+            {
+                "city": "Antwerp",
+                "tier": "250",
+                "result": "Win"
+            }]
+        },
+        {
+            "firstname": "Andrey",
+            "lastname": "Rublev",
+            "dob": "1997-10-20",
+            "weight": 75,
+            "height": 188,
+            "atprank": 9,
+            "racket": "Head",
+            "coach": "Fernando Vicente",
+            "stronghand": "Right",
+            "country": "Russia",
+            "playerid": 9,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "R16"
+            },
+            {
+                "city": "Gijon",
+                "tier": "250",
+                "result": "Win"
+            }]
+        },
+        {
+            "firstname": "Hubert",
+            "lastname": "Hurkacz",
+            "dob": "1997-02-11",
+            "weight": 81,
+            "height": 196,
+            "atprank": 10,
+            "racket": "Yonex",
+            "coach": "Craig Boynton",
+            "stronghand": "Right",
+            "country": "Poland",
+            "playerid": 10,
+            "tournament": [{
+                "city": "Vienna",
+                "tier": "500",
+                "result": "QF"
+            },
+            {
+                "city": "Antwerp",
+                "tier": "250",
+                "result": "QF"
+            }]
+        }]
+    ]
+}
