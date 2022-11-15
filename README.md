@@ -1,7 +1,7 @@
 # otvoreno-lab
 Licencija: MIT license
 Autor: Nikola Đokić
-Verzija: 1.0
+Verzija: 2.0
 Jezik: Engleski
 
 | Atribut    | Pojašnjenje                                               |
@@ -20,4 +20,4 @@ Jezik: Engleski
 | tier       | Atp razina turnira                                        |
 | result     | Plasman tenisača                                          |
 
-Datum objavljivanja: 01-11-2022
+Datum objavljivanja: 15-11-2022
