@@ -4,30 +4,20 @@ Autor: Nikola Đokić
 Verzija: 1.0
 Jezik: Engleski
 
-Atributi:
-	
-firstName -> ime tenisača,
-
-lastName -> prezime tenisača
-
-dob -> datum rođenja tenisača,
-
-weight -> težina tenisača,
-
-height -> visina tenisača,
-
-atprank -> pozicija na atp ljestvici,
-
-coach -> trener igrača
-
-stronghand -> ruka s kojom igrač udara forehand,
-
-country -> država porijekla tenisača
-
-tournament -> podaci o posljednja dva turnira na kojima je nastupao tenisač:
-		
-city -> mjesto turnira,
-		tier -> razina turnira,
-		result -> tenisačev plasman
+| Atribut    | Pojašnjenje                                               |
+|------------|-----------------------------------------------------------|
+| firstName  | Ime tenisača                                              |
+| lastName   | Prezime tenisača                                          |
+| dob        | Datum rođenja tenisača                                    |
+| weight     | Težina tenisača                                           |
+| height     | Visina tenisača                                           |
+| atprank    | Pozicija na atp ljestvici                                 |
+| coach      | Ime i prezime tenisačeva trenera                          |
+| stronghand | Dominantna ruka tenisača                                  |
+| country    | Država porijekla tenisača                                 |
+| tournament | Podaci o zadnja dva turnira na kojima je nastupao tenisač |
+| city       | Grad turnira                                              |
+| tier       | Atp razina turnira                                        |
+| result     | Plasman tenisača                                          |
 
 Datum objavljivanja: 01-11-2022
