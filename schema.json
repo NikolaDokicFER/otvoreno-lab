@@ -2,8 +2,8 @@
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://github.com/NikolaDokicFER/otvoreno-lab/blob/main/atp_players.json",
     "type": "array",
-    "default": [],
-    "title": "Root Schema",
+    "description": "Top 10 atp tenisača i njihova 2 posljednja turnira",
+    "title": "Top 10 atp tenisača",
     "items": {
         "type": "object",
         "title": "A Schema",

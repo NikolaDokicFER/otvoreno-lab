@@ -1,0 +1,400 @@
+{
+	"openapi": "3.0.1",
+	"info": {
+		"title": "OpenAPI definition",
+		"version": "v0",
+		"contact":{
+			"email": "nd51917@fer.hr"
+		},
+		"license":{
+			"name": "MIT License",
+			"url": "https://opensource.org/licenses/MIT"
+		}
+	},
+	"servers": [{
+		"url": "http://localhost:8080/",
+		"description": "Generated server url"
+	}],
+	"paths": {
+		"/api/players": {
+			"get": {
+				"tags": ["player-controller"],
+				"operationId": "getPlayers",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"tags": ["player-controller"],
+				"operationId": "updatePlayer",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Player"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/players/new": {
+			"post": {
+				"tags": ["player-controller"],
+				"operationId": "savePlayer",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/Player"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/players/racket/{racket}": {
+			"get": {
+				"tags": ["player-controller"],
+				"operationId": "getPlayerByRacket",
+				"parameters": [{
+					"name": "racket",
+					"in": "path",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/players/name/{firstName}": {
+			"get": {
+				"tags": ["player-controller"],
+				"operationId": "getPlayerByFirstName",
+				"parameters": [{
+					"name": "firstName",
+					"in": "path",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/players/id/{id}": {
+			"get": {
+				"tags": ["player-controller"],
+				"operationId": "getPlayerById",
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"schema": {
+						"type": "integer",
+						"format": "int64"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": ["player-controller"],
+				"operationId": "deletePlayer",
+				"parameters": [{
+					"name": "id",
+					"in": "path",
+					"required": true,
+					"schema": {
+						"type": "integer",
+						"format": "int64"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/players/country/{country}": {
+			"get": {
+				"tags": ["player-controller"],
+				"operationId": "getPlayersByCountry",
+				"parameters": [{
+					"name": "country",
+					"in": "path",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/players/**": {
+			"get": {
+				"tags": ["player-controller"],
+				"operationId": "redirect",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"tags": ["player-controller"],
+				"operationId": "redirect_3",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": ["player-controller"],
+				"operationId": "redirect_2",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"tags": ["player-controller"],
+				"operationId": "redirect_5",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"options": {
+				"tags": ["player-controller"],
+				"operationId": "redirect_6",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"head": {
+				"tags": ["player-controller"],
+				"operationId": "redirect_1",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			},
+			"patch": {
+				"tags": ["player-controller"],
+				"operationId": "redirect_4",
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"*/*": {
+								"schema": {
+									"$ref": "#/components/schemas/Response"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"Player": {
+				"type": "object",
+				"properties": {
+					"playerId": {
+						"type": "integer",
+						"format": "int64"
+					},
+					"firstName": {
+						"type": "string"
+					},
+					"lastName": {
+						"type": "string"
+					},
+					"dob": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"weight": {
+						"type": "integer",
+						"format": "int32"
+					},
+					"height": {
+						"type": "integer",
+						"format": "int32"
+					},
+					"atpRank": {
+						"type": "integer",
+						"format": "int32"
+					},
+					"racket": {
+						"type": "string"
+					},
+					"coach": {
+						"type": "string"
+					},
+					"strongHand": {
+						"type": "string"
+					},
+					"country": {
+						"type": "string"
+					}
+				}
+			},
+			"Response": {
+				"type": "object",
+				"properties": {
+					"status": {
+						"type": "string"
+					},
+					"message": {
+						"type": "string"
+					},
+					"response": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Player"
+						}
+					}
+				}
+			}
+		}
+	}
+}
