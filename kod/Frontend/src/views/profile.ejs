@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ATP Tenisači</title>
+        <link rel='stylesheet' href='/styles/main.css' />
+    </head>
+    
+    <body style="text-align: center;">
+        <h1>
+            User profile
+        </h1>
+        <div>
+            <br/>
+            <br/>
+            Email: <%= user.email %>
+            <br/>
+            <br/>
+            Name: <%= user.name %>
+            <br/>
+            <br/>
+            Nickname: <%= user.nickname %>
+            <br/>
+            <br/>
+            Verified email: <%= user.email_verified %>
+            <br/>
+            <br/>
+            <br/>
+            Avatar:
+        </div>
+        <img src="<%= user.picture %>">
+    </body>
+</html>

@@ -46,12 +46,19 @@ public class PlayerController {
 
     @PostMapping("/new")
     public  ResponseEntity<Response> savePlayer(@RequestBody Player player){
-        response.setStatus("OK");
-        response.setMessage("Player saved");
-        List<Player> list = new ArrayList<>();
-        list.add(playerRepo.save(player));
-        response.setResponse(list);
-        return new ResponseEntity<>(response,HttpStatus.OK);
+        if (playerRepo.existsById(player.getPlayerId())) {
+            response.setStatus("FORBIDDEN");
+            response.setMessage("Player with this id already exists");
+            response.setResponse(null);
+            return new ResponseEntity<>(response,HttpStatus.FORBIDDEN);
+        }else {
+            response.setStatus("OK");
+            response.setMessage("Player saved");
+            List<Player> list = new ArrayList<>();
+            list.add(playerRepo.save(player));
+            response.setResponse(list);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        }
     }
 
     @DeleteMapping("/id/{id}")

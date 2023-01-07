@@ -8,17 +8,16 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Getter
 @Setter
 @ToString
 @RequiredArgsConstructor
 @Component
-public class Response {
-    private String status;
-    private String message;
-    @JsonProperty("@context")
-    private Context context = new Context();
-    private List<Player> response;
+public class Context {
+    @JsonProperty("@vocab")
+    private String vocab = "\"http://schema.org/\"";
+    private String first_name = "givenName";
+    private String last_name = "familyName";
+    private String dob = "birthPlace";
+    private String country = "nationality";
 }

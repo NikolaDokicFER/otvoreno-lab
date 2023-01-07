@@ -3,7 +3,7 @@
     <head>
         <title>Top 10 atp players</title>
         <author>Nikola Đokić</author>
-        <version>2.0</version>
+        <version>4.0</version>
         <link rel='stylesheet' href='/styles/main.css' />
     </head>
     
@@ -11,27 +11,38 @@
         <h1>
             Top 10 atp players
         </h1>
-
         <div class="form-center" style="margin-top: 30px;">
+            User profile:  
+            <button class="btn2"><a href="https://localhost:4080/profile"  class="btn-text">Show</a></button>
+        </div><br/>
+        <div class="form-center">
             Download data in CSV format:  
-            <button><a href="\opendata\atp_players.csv" download>Download</a></button>
+            <button class="btn2"><a href="\opendata\atp_players.csv"  class="btn-text" download>Download</a></button>
         </div><br/>
         <div class="form-center">
             Download data in JSON format:  
-            <button><a href="\opendata\atp_players.json" download>Download</a></button>
+            <button class="btn2"><a href="\opendata\atp_players.json"  class="btn-text" download>Download</a></button>
+        </div><br/>
+        <div class="form-center">
+            Refresh data:  
+            <button class="btn2"><a href="https://localhost:4080/refresh"  class="btn-text">Refresh</a></button>
         </div><br/>
         <div class="form-center">
             Explore data in your browser:
-            <button on><a href="https://localhost:4080/datatable">Open</a></button>
+            <button on class="btn2"><a href="https://localhost:4080/datatable" class="btn-text">Open</a></button>
+        </div><br/>
+        <div class="form-center">
+            Log out:  
+            <button class="btn2"><a href="https://localhost:4080/logout"  class="btn-text">Go</a></button>
         </div><br/>
         <br/><br/>
         <div style="margin-left: 50px; margin-top: 30px">
             Metapodaci: <br/>
-            Licencija: MIT License
-            Autor: Nikola Đokić
-            Verzija: 2.0
-            Jezik: Engleski
-            Datum: 15.11.2022.
+            Licencija: MIT License,
+            Autor: Nikola Đokić,
+            Verzija: 4.0,
+            Jezik: Engleski,
+            Datum: 07.01.2023.
         </div>
         <div style="margin-left: 50px; margin-top: 30px">
 | Atribut    | Pojašnjenje                                               | <br/>

@@ -5,11 +5,11 @@
         <link rel='stylesheet' href='/styles/main.css' />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body style="text-align: center;">
         <h1>
             Top 10 atp players
         </h1>
-        <div id="table-update" class="center">
+        <div id="table-update" style="text-align: center;">
             <table>
                 <tr>
                     <th width="20px">Atp</th>
@@ -27,13 +27,13 @@
                 </tr>
                 <% for(var j=0; j<players.length; j++){ %>
                 <tr>
-                    <td><%= players[j].atprank %></td>
-                    <td><%= players[j].firstname %></td>
-                    <td><%= players[j].lastname %></td>
+                    <td><%= players[j].atp_rank %></td>
+                    <td><%= players[j].first_name %></td>
+                    <td><%= players[j].last_name %></td>
                     <td><%= players[j].country %></td>
                     <td><%= players[j].height %></td>
                     <td><%= players[j].weight %></td>
-                    <td><%= players[j].stronghand %></td>
+                    <td><%= players[j].strong_hand %></td>
                     <td><%= players[j].racket %></td>
                     <td><%= players[j].coach %></td>
                     <td><%= players[j].city %></td>
@@ -45,7 +45,7 @@
         </div><br/>
         <div class="form-center">
             <form>
-                <select name="playersFilter" onchange="setAttr(this.value)">
+                <select name="playersFilter" onchange="setAttr(this.value)" class="btn2" style="width: 200px;">
                     <option value="all">All Attributes(wildcard)</option>
                     <option value="atprank">Atp Rank</option>
                     <option value="firstname">First Name</option>
@@ -64,12 +64,12 @@
             <form onkeydown="return event.key != 'Enter';">
                 <label for="query">Enter value: </label>
                 <input type="text" id="query" name="query">
-                <input type="button" id="submit" value="Search" name="submit" onclick="showPlayers(document.getElementById('query').value)"></input>
+                <input type="button" id="submit" class="btn2" value="Search" name="submit" onclick="showPlayers(document.getElementById('query').value)"></input>
             </form> 
         </div>
         <div class="form-center">
             Download data in JSON format:  
-            <button><a href="\opendata\filter_players.json" download>Download</a></button>
+            <button class="btn2"><a href="\opendata\filter_players.json" class="btn-text" download>Download</a></button>
         </div><br/>
     <script src="../scripts/logic.js" async defer></script>
     </body>
